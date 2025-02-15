@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новое"
+            android:textColor="#3F51B5"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Первый элемент -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgWitcher"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/woman"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_corners" />
+
+            <TextView
+                android:id="@+id/tvWitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мытье полов"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <!-- Второй элемент -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgJessicaJones"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/woman2"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_corners" />
+
+            <TextView
+                android:id="@+id/tvJessicaJones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мытье посуды"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <!-- Третий элемент -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgOther"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/woman3"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_corners" />
+
+            <TextView
+                android:id="@+id/tvOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Другое"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите текст"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:padding="16dp"
+          />
+
+            <!-- Кнопка добавления -->
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Добавить"
+                android:backgroundTint="#3F51B5"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
